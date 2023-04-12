@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import PersonalInfo from './component/update/personalinfo';
 import Navbar from './component/update/navbar';
+import Home from './home/home';
 
 
 
@@ -10,8 +11,7 @@ function App() {
     <div className="PersonalInfo">
       
       <main>
-      <Navbar/>
-      <PersonalInfo />
+      <Home/>
       </main>
     </div>
   );
