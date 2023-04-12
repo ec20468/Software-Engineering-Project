@@ -5,12 +5,12 @@ import './index.css'
 
 const Calendar = () => {
     const [manager, setManager] = useState(false)
-    const [groups] = useState([
+    const groups = [
         { id: 1, title: 'Optical Birkin' },
         { id: 2, title: 'Jonathan Opkins' },
-    ]);
+    ];
 
-    const [items] = useState([
+    const items = [
         {
             id: 1,
             group: 1,
@@ -25,14 +25,15 @@ const Calendar = () => {
             start_time: new Date('2023-04-01T11:00:00'),
             end_time: new Date('2023-04-01T12:00:00'),
         },
-    ]);
+    ];
     const newItems = manager ? items : [items[0]]
     const newGroups = manager ? groups : [groups[0]]
+
 
     return (
         <div style={{ height: '500px' }}>
             <button className="button" onClick={() => setManager(true)}>Manager</button>
-            <button className="button" onCLick={() => setManager(false)}>Employee</button> 
+            <button className="button" onClick={() => setManager(false)}>Employee</button> 
             <Timeline
                 groups={newGroups}
                 items={newItems}
