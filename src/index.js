@@ -8,7 +8,7 @@ import PersonalInfo from './component/update/personalinfo.js';
 import Index from './chat_component/index';
 import Calendar from './components/schedule/index';
 import Messages from './chat_component/chat'
-
+import Login from './components/Login/index'
 
 const router = createBrowserRouter([
   {
@@ -31,7 +31,10 @@ const router = createBrowserRouter([
     path: "messages",
     element: <Messages/>
   },
-
+  {
+    path: "Login",
+    element: <Login/>
+  }
 
 
 ]);
