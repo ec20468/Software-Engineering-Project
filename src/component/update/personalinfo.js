@@ -33,7 +33,6 @@ function PersonalInfo() {
   
     return (
       <>
-      <Navbar/>
       <body>
       <div id='main'>
         <h2>Welcome, {name} ! </h2>
